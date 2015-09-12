@@ -5,3 +5,9 @@ authors = ["Géraud Le Falher <daureg@gmail.com>"]
 
 [dependencies]
 hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+clippy = "*"
+chrono = "*"
+clap = {version = "*", features = ["yaml"]}

@@ -1,0 +1,28 @@
+name: currency
+version: 1.0
+about: Convert an amount of euros to another currency or vice versa
+author: Géraud Le Falher <daureg@gmail.com>
+
+settings: 
+    - ArgRequiredElseHelp
+
+args:
+    - currency:
+        help: short code for currency
+        possible_values: [usd, gbp, cad, chf, aud, jpy, ron, brl, php, twd, ars, xcd, gtq, mad, bhd, pab, azn, cop, kgs, huf, tjs, idr, egp, krw, myr, nzd, pkr, rub, zar, tnd, bgn, try, mxn, xof, pgk, xpf, ghs, jmd, ang, bnd, rsd, cny, byr, dkk, tmt, inr, uah, kzt, lbp, lyd, npr, omr, qar, sgd, sek, ttd, vef, hrk, hkd, xaf, vnd, bsd, fjd, hnl, dzd, mmk, bwp, pen, clp, amd, czk, mdl, isk, uzs, ils, jod, kwd, mur, nok, pln, sar, lkr, thb, aed]
+    - amount:
+        help: Amount of money to be converted
+    - reverse:
+        help: convert from the chosen currency to euro
+        short: r
+        long: reverse
+    - list:
+        help: show available currencies
+        short: l
+        long: list
+        # Conflicts, mutual overrides, and requirements can all be defined as a
+        # list, where the key is the name of the other argument
+        conflicts_with:
+            - currency
+            - amount
+            - reverse

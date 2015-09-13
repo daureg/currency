@@ -1,6 +1,6 @@
 [package]
 name = "currency"
-version = "0.1.0"
+version = "0.5.0"
 authors = ["Géraud Le Falher <daureg@gmail.com>"]
 
 [dependencies]

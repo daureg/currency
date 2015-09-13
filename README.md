@@ -25,7 +25,7 @@ ARGS:
 
 ## Installation
 
-[Download binary]() from github
+[Download binary](https://github.com/daureg/currency/releases/download/v0.5/currency.linux.x86-64) from github (only for Linux)
 
 Otherwise:
 

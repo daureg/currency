@@ -10,4 +10,10 @@ serde_json = "*"
 serde_macros = "*"
 clippy = "*"
 chrono = "*"
-clap = {version = "*", features = ["yaml"]}
+term_grid = "*"
+ansi_term = "*"
+
+[dependencies.clap]
+version = "*"
+default-features = false
+features = ["color", "yaml"]
